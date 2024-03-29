@@ -8,7 +8,7 @@ const SearchBar = () => {
                 <input
                     type="text"
                     id="searchInput"
-                    placeholder="Quelle série cherches-tu ?"
+                    placeholder="Quel film cherches-tu ?"
                 />
                 <input type="submit" value="Rechercher" />
             </form>
@@ -26,8 +26,8 @@ const SearchBar = () => {
 
 // STYLED-COMPONENTS
 const SearchbarWrapper = styled.section`
-    width: 70%;
-    max-width: 728px;
+    width: 100%;
+    /* max-width: 728px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,6 +40,7 @@ const SearchbarWrapper = styled.section`
         font-weight: 500;
         font-size: 1.1rem;
         border: none;
+        cursor: pointer;
         &:hover {
             font-weight: 900;
             background: ${colors.primDark};
@@ -67,7 +68,7 @@ const SearchbarWrapper = styled.section`
             border-radius: 0px 10px 10px 0px;
         }
 
-        @media screen and (max-width: 580px) {
+        @media screen and (max-width: 405px) {
             input[type="text"] {
                 border-radius: 10px 10px 0px 0px;
             }
