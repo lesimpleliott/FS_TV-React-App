@@ -63,7 +63,7 @@ const CardDiv = styled.div`
 
     &:hover {
         transform: scale(1.05);
-        transition: transform 100ms ease-in-out;
+        transition: transform 100ms ease-out;
     }
 
     .preview {
